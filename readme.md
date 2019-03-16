@@ -38,3 +38,16 @@ Alternatively you can go here:
 
 ## Bash
 Bash seems a lot nicer than bash on Ubuntu, as copy-paste just works, without having to press shift etc. However by default there are no colors, and the prompt is a but sober. Let's fix that. [This](https://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/) isn't helping a lot, and both `~/.bashrc` and `~/.bash_profile` are not there. I've created a new file `~/.bash_profile`.
+
+```bash
+git_branch() {
+  git branch 2>/dev/null | grep '^*' | colrm 1 2
+}
+
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h\[\033[33;1m\]\w\[\033[m\](\[\033[33m\]\$(git_branch)\[\033[00m\])\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+```
+
+to apply these changes, just execute the file: `. ~/.bash_profile`
