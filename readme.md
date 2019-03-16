@@ -3,7 +3,7 @@
 I recently switched to OSX from Ubuntu and now need to install all the stuff I need to work. Next to the bare minimal of software I will note down any transition material from Windows/Ubuntu to OSX.
 
 ## Visual Studio Code
-[download Visual Studio Code](https://code.visualstudio.com/docs/?dv=osx) and open the .app file. I'm now typing this file from this very instance.
+[download Visual Studio Code](https://code.visualstudio.com/docs/?dv=osx) and open the .app file. I'm now typing this file from this very instance. See [Visual Studio Code Tips](#visual-studio-code-tips) below for more information.
 
 I need the following list of software:
 - MongoDB
@@ -57,3 +57,8 @@ Old prompt:
 
 New prompt:
 `username@MACHINENAME~(gitbranchname)$ `
+
+## Visual Studio Code Tips
+
+### Add code to path
+* **command+shift+p** - choose `Shell command: install 'code' command in PATH`. This enables typing `code .` from bash, so it opens VSC in this folder.
