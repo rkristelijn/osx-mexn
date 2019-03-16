@@ -29,9 +29,23 @@ git version 2.17.2 (Apple Git-113)
 Alternatively you can go here:
 [download](https://nl.atlassian.com/git/tutorials/install-git): `git-2.21.0-intel-universal-mavericks.dmg` seems the latest version on Sourceforge. However when you download, you will need to accept the installer in a special way so it accepts the certificates. I currently go with 2.17.2 as this seems to do the job.
 
+## Node
+
+[source](https://blog.teamtreehouse.com/install-node-js-npm-mac) - Use these steps to install brew and node.\
+
+```bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install node
+
+node -v
+v11.11.0
+npm -v
+6.7.0
+```
+
 ## MongoDB
 
-[source](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) -
+[source](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) - Use below steps to install MongoDB. Check the source for more information.
 
 ```bash
 brew update
