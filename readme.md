@@ -51,3 +51,9 @@ alias ls='ls -GFh'
 ```
 
 to apply these changes, just execute the file: `. ~/.bash_profile`
+
+Old prompt:
+`MACHINENAME:~ username$`
+
+New prompt:
+`username@MACHINENAME~(gitbranchname)$ `
