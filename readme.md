@@ -43,6 +43,8 @@ npm -v
 6.7.0
 ```
 
+if you can't install brew because of privilages, just download Node from [nodejs](https://nodejs.org/en/download/) and install from there.
+
 ## MongoDB
 
 [source](https://treehouse.github.io/installation-guides/mac/mongo-mac.html) - Use below steps to install MongoDB. Check the source for more information.
@@ -66,6 +68,8 @@ brew services list | grep mongodb
 brew services start mongodb
 brew services stop mongodb
 ```
+
+again, if you don't have brew, install using [these steps](https://medium.com/@saurabhkumar_4718/install-mongodb-without-homebrew-on-mac-os-2a98b68ab09c)
 
 ## Migrate to OSX from Ubuntu/Windows
 
