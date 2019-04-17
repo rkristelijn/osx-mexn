@@ -120,3 +120,13 @@ New prompt:
 - **[prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** - when formatOnSave is enabled, default formatting rules are applied
 - **[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)** - because code needs to be spelled right
 - **[yuml](https://marketplace.visualstudio.com/items?itemName=JaimeOlivares.yuml)** - for diagramming in uml
+
+# Problems installing homebrew?
+If you get:
+```
+/usr/local/Homebrew/.git: Permission denied
+Failed during: git init -q
+```
+Do:
+`sudo install -d -o $(whoami) -g admin`
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
